@@ -77,8 +77,12 @@ def current_player
     player = "O"
   end
 end
-
-  
+def won?
+  won = WIN_COMBINATIONS.any? do |combo|
+     @board[combo[0]] == @board[combo[1]] && @board[combo[2]] == @board[combo[1]]
+   end
+ end
+      
 
 
 
