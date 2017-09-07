@@ -95,7 +95,7 @@ def full?
   end
 end
 def draw?
-  if full? && (won? == false)
+  if full? && won? == false
     draw = true
   else
     draw = false
