@@ -16,7 +16,7 @@ def initialize(board = nil)
     board = []
     counter = 0
     while counter < 9 do
-      board << " "
+      @board << " "
       counter += 1
     end
   end
