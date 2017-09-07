@@ -87,6 +87,13 @@ def full?
     space == "X" || space == "O"
   end
 end
+def draw?
+  if full? && !won
+    draw = true
+  else
+    draw = false
+  end
+end
 
 
 
