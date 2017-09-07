@@ -120,7 +120,6 @@ end
 end
 
 def play
-  puts "Welcome to tic tac toe!"
   while over? == false do
     turn
   end
