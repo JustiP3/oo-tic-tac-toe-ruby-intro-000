@@ -48,7 +48,7 @@ def valid_move?(index)
     valid=false
   end
 end
-def turn (token = "X")
+def turn(token = "X")
   valid = false
   while valid = false do
     puts "Please enter 1-9:"
@@ -111,11 +111,11 @@ end
 def play
   while over? == false do
     current_player = current_player(board)
-    
+
   end
 
 end
-  
+
 
 
 end
