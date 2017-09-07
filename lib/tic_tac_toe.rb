@@ -94,6 +94,13 @@ def draw?
     draw = false
   end
 end
+def over?
+  if won? || draw?
+    over = true
+  else
+    over = false
+  end
+end
 
 
 
