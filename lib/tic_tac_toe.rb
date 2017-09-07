@@ -45,7 +45,7 @@ def valid_move?(index)
   if index.between?(0, 8) && !position_taken?(index)
     valid = true
   else
-    valid=false
+    valid = false
   end
 end
 
@@ -102,7 +102,7 @@ def draw?
   end
 end
 def over?
-  if won? || draw?
+  if won? != false || draw?
     over = true
   else
     over = false
