@@ -48,7 +48,7 @@ def valid_move?(index)
     valid=false
   end
 end
-def turn
+def turn (token = "X")
   valid = false
   while valid = false do
     puts "Please enter 1-9:"
@@ -56,7 +56,7 @@ def turn
     index = input_to_index(input)
     valid = valid_move?(index)
     if valid
-      move(index)
+      move(index, token)
       display_board
     end
   end
@@ -108,6 +108,14 @@ def winner
   winner = @board[combo[0]]
 end
 
+def play
+  while over? == false do
+    current_player = current_player(board)
+    
+  end
+
+end
+  
 
 
 end
