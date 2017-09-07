@@ -48,5 +48,15 @@ def valid_move?(index)
     valid=false
   end
 end
+def turn
+  valid = false
+  while valid = false do
+    puts "Please enter 1-9:"
+    input = gets.strip
+    index = input_to_index(input)
+    valid = valid_move?(index)
+  end
+
+end
 
 end
