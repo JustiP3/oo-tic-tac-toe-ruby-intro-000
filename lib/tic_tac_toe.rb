@@ -95,12 +95,13 @@ def full?
   end
 end
 def draw?
-if won? == false && full? == true
+  if won? == false && full? == true
   draw = true
-else
+  else
   draw = false
+  end
 end
-end
+
 def over?
   if won? != false || draw?
     over = true
