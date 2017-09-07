@@ -49,7 +49,7 @@ def valid_move?(index)
   end
 end
 
-def turn(token = "X")
+def turn()
   valid = false
   while valid == false do
     puts "Please enter 1-9:"
@@ -111,9 +111,8 @@ end
 
 def play
   puts "Welcome to tic tac toe!"
-  while over? == false do
-    current_player = current_player(board)
-    turn(current_player)
+  while over? == false do    
+    turn
   end
 if won?
   puts "Congratulations #{winner}"
