@@ -112,7 +112,7 @@ def winner
   winning_combination = WIN_COMBINATIONS.find do |combo|
     @board[combo[0]] == @board[combo[1]] && @board[combo[2]] == @board[combo[1]]
   end
-  winner = @board[combo[0]]
+  winner = @board[winning_combination[0]]
 end
 
 def play
