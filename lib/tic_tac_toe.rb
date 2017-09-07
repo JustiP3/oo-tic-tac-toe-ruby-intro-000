@@ -115,7 +115,7 @@ elsif draw?
   winner = nil
 elsif won? != false
   winner = @board[won?[0]]
-end  
+end
 end
 
 def play
