@@ -13,7 +13,7 @@ WIN_COMBINATIONS = [
 def initialize(board = nil)
   @board = board
   if board == nil
-    board = []
+    @board = []
     counter = 0
     while counter < 9 do
       @board << " "
