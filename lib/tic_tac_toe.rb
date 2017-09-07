@@ -111,9 +111,13 @@ end
 def play
   while over? == false do
     current_player = current_player(board)
-
+    turn(current_player)
   end
-
+if won?
+  puts "Congratulations #{winner}"
+else
+  puts "Cat's Game!"
+end
 end
 
 
