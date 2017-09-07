@@ -95,7 +95,7 @@ def full?
   end
 end
 def draw?
-  if full? && !won?
+  if full? && won? == false
     draw = true
   else
     draw = false
@@ -109,16 +109,13 @@ def over?
   end
 end
 def winner
-  if draw? || !over?
+if !over?
   winner = nil
-  elsif won? != false
-    winning_combination = WIN_COMBINATIONS.find do |combo|
-    @board[combo[0]] == @board[combo[1]] && @board[combo[2]] == @board[combo[1]]
-    end
-    winner = @board[winning_combination[0]]
-  else
-    winner = nil
-  end
+elsif draw?
+  winner = nil
+elsif won? != false
+  winner = @board[won?[0]]
+end  
 end
 
 def play
