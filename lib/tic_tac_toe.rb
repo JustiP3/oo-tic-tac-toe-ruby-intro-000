@@ -49,7 +49,7 @@ def valid_move?(index)
   end
 end
 
-def turn()
+def turn
   valid = false
   token = current_player
   while valid == false do
@@ -110,14 +110,14 @@ def over?
 end
 def winner
   if draw? || !over?
-  nil
+  winner = nil
   elsif won? != false
     winning_combination = WIN_COMBINATIONS.find do |combo|
     @board[combo[0]] == @board[combo[1]] && @board[combo[2]] == @board[combo[1]]
     end
     winner = @board[winning_combination[0]]
   else
-    nil
+    winner = nil
   end
 end
 
