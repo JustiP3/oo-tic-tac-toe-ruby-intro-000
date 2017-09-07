@@ -109,10 +109,14 @@ def over?
   end
 end
 def winner
+  if won? != false
   winning_combination = WIN_COMBINATIONS.find do |combo|
     @board[combo[0]] == @board[combo[1]] && @board[combo[2]] == @board[combo[1]]
   end
   winner = @board[winning_combination[0]]
+else
+  nil
+end
 end
 
 def play
