@@ -56,6 +56,7 @@ def turn
     index = input_to_index(input)
     valid = valid_move?(index)    
     move(index)
+    display_board
   end
 
 end
