@@ -32,7 +32,7 @@ def input_to_index(input)
   index = input.to_i - 1
 end
 def move(index, token = "X")
-#what does move do?
+@board[index] = token
 end
 def position_taken?(index)
   if @board[index] == "X" || @board[index] == "O"
