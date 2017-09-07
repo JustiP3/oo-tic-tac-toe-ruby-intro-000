@@ -82,7 +82,12 @@ def won?
      @board[combo[0]] == @board[combo[1]] && @board[combo[2]] == @board[combo[1]]
    end
  end
-      
+def full?
+  full = @board.all? do |space|
+    space == "X" || space == "O"
+  end
+end
+
 
 
 
