@@ -70,7 +70,16 @@ def turn_count
   end
   count
 end
-    
+def current_player
+  if turn_count % 2 == 0
+    player = "X"
+  else
+    player = "O"
+  end
+end
+
+  
+
 
 
 end
