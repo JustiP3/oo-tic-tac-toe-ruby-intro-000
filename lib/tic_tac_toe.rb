@@ -109,6 +109,7 @@ def winner
 end
 
 def play
+  puts "Welcome to tic tac toe!"
   while over? == false do
     current_player = current_player(board)
     turn(current_player)
