@@ -26,7 +26,7 @@ def display_board
   puts "-----------"
   puts " #{@board[3]} | #{@board[4]} | #{@board[5]} "
   puts "-----------"
-  puts " #{@baord[6]} | #{@board[7]} | #{@board[8]} "
+  puts " #{@board[6]} | #{@board[7]} | #{@board[8]} "
 end
 def input_to_index(input)
   index = input.to_i - 1
