@@ -51,6 +51,7 @@ end
 
 def turn()
   valid = false
+  token = current_player
   while valid == false do
     puts "Please enter 1-9:"
     input = gets.strip
@@ -111,7 +112,7 @@ end
 
 def play
   puts "Welcome to tic tac toe!"
-  while over? == false do    
+  while over? == false do
     turn
   end
 if won?
