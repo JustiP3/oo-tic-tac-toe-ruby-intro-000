@@ -81,7 +81,7 @@ def current_player
 end
 def won?
   won = WIN_COMBINATIONS.any? do |combo|
-     @board[combo[0]] == @board[combo[1]] && @board[combo[2]] == @board[combo[1]]
+     @board[combo[0]] == @board[combo[1]] && @board[combo[2]] == @board[combo[1]] && @board[combo[0]] == "X" || @board[combo[0]] == "O"
    end
    if won
      winning_combination = WIN_COMBINATIONS.find do |combo|
