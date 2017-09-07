@@ -95,7 +95,10 @@ def full?
   end
 end
 def draw?
-  if won? == false && full? == true
+  won = WIN_COMBINATIONS.any? do |combo|
+     @board[combo[0]] == @board[combo[1]] && @board[combo[2]] == @board[combo[1]] && @board[combo[0]] == "X" || @board[combo[0]] == "O"
+   end
+  if won == false && full? == true
   draw = true
   else
   draw = false
